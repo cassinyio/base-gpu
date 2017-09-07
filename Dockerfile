@@ -5,7 +5,7 @@
 # based for all the images that are using GPUs
 
 # https://hub.docker.com/r/nvidia/cuda/
-FROM nvidia/cuda:8.0-runtime
+FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
 
 LABEL maintainer "wow@cassiny.io"
 

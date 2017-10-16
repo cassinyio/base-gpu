@@ -1,9 +1,6 @@
 # Copyright (c) 2017, Cassiny.io OÜ
 # Distributed under the terms of the Modified BSD License.
 
-# cassinyio/base-gpu image
-# based for all the images that are using GPUs
-
 # https://hub.docker.com/r/nvidia/cuda/
 FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
 

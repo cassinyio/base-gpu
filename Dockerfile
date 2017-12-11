@@ -2,7 +2,7 @@
 # Distributed under the terms of the Modified BSD License.
 
 # https://hub.docker.com/r/nvidia/cuda/
-FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn6-devel-ubuntu16.04
 
 LABEL maintainer "wow@cassiny.io"
 

@@ -16,7 +16,5 @@ env:
 script:
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   - export REPO=cassinyio/base-gpu
-  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
   - docker build -f Dockerfile -t $REPO:$COMMIT .
-  - docker tag $REPO:$COMMIT $REPO:$TAG
-  - docker push $REPO
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker push $REPO; else echo "Skip docker push"; fi
